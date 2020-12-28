@@ -1,127 +1,146 @@
-body {
-    background-color: rgb(252, 178, 144);
+@media screen,
+(max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
-.container {
-    margin-bottom: 100px;
+#logreg-forms {
+    width: 412px;
+    margin: 10vh auto;
+    background-color: #f3f3f3;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.navbar-toggler {
-    border: none;
-    background-color: rgb(12, 7, 3);
-    height: 20%;
-    width: 20%;
+#logreg-forms form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
 }
 
-h5 {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-}
-
-h4 {
-    color: red;
-}
-
-.middle-img {
-    height: 500px;
-    width: 700px;
-}
-
-.footer {
-    background-image: linear-gradient(45deg red, blue);
-}
-
-.par {
-    font-size: 30px;
-    color: rgb(53, 52, 52);
-}
-
-.jumbotron {
-    background-image: linear-gradient(60deg, rgb(204, 204, 204), rgb(255, 194, 144));
-}
-
-.jumbotron:hover {
-    box-shadow: 6px 6px 6px 6px rgb(209, 188, 188);
-}
-
-.ads:hover {
-    box-shadow: 6px 6px 6px 6px rgba(255, 255, 255, 0);
-}
-
-.ads {
-    background-image: linear-gradient(50deg, rgb(253, 183, 153), rgb(255, 208, 169));
-    border: 10px solid rgb(136, 133, 133);
-    border-radius: 5px;
-}
-
-.box {
-    text-align: center;
-    padding: 30px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
-    height: 200px;
-    position: center;
-    min-width: 200px;
-}
-
-.box img {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-.box h3 {
-    font-size: 24px;
-    color: #413960;
-}
-
-.box small {
-    color: #585859;
+#logreg-forms .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
     font-size: 16px;
 }
 
-.box:hover {
-    background-color: #fff;
-    box-shadow: 2px 5px 10px 3px rgb(255, 115, 105);
+#logreg-forms .form-control:focus {
+    z-index: 2;
 }
 
-.footer {
+#logreg-forms .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#logreg-forms .form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#logreg-forms .social-login {
+    width: 390px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+
+#logreg-forms .social-btn {
+    font-weight: 100;
+    color: white;
+    width: 190px;
+    font-size: 0.9rem;
+}
+
+#logreg-forms a {
+    display: block;
+    padding-top: 10px;
     color: rgb(255, 255, 255);
-    background-image: linear-gradient(50deg, rgb(0, 0, 0), rgb(78, 77, 77));
+}
+
+.forgot {
+    display: block;
+    padding-top: 10px;
+    color: rgb(15, 89, 207) !important;
+}
+
+#logreg-form .lines {
+    width: 200px;
+    border: 1px solid red;
+}
+
+#logreg-forms button[type="submit"] {
+    margin-top: 10px;
+}
+
+#logreg-forms .facebook-btn {
+    background-color: #3C589C;
+}
+
+#logreg-forms .google-btn {
+    background-color: #DF4B3B;
+}
+
+#logreg-forms .form-signup .social-btn {
+    width: 210px;
+}
+
+#logreg-forms .form-signup input {
+    margin-bottom: 2px;
+}
+
+.form-signup .social-login {
+    width: 210px !important;
+    margin: 0 auto;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width:500px) {
+    #logreg-forms {
+        width: 300px;
+    }
+    #logreg-forms .social-login {
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 0px;
+    }
+    #logreg-forms .social-btn {
+        font-size: 1.3rem;
+        font-weight: 100;
+        color: white;
+        width: 200px;
+        height: 56px;
+    }
+    #logreg-forms .social-btn:nth-child(1) {
+        margin-bottom: 5px;
+    }
+    #logreg-forms .social-btn span {
+        display: none;
+    }
+    #logreg-forms .facebook-btn:after {
+        content: 'Facebook';
+    }
+    #logreg-forms .google-btn:after {
+        content: 'Google+';
+    }
+}
+
+.top-img {
+    width: 150px;
+    height: 150px;
+}
+
+.img-div {
     text-align: center;
-}
-
-.footer:hover {
-    box-shadow: 6px 6px 6px 6px rgba(255, 255, 255, 0);
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-android {
-    background: #a4c639;
-    color: white;
-}
-
-.fa-google {
-    background: #dd4b39;
-    color: white;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 22px;
-    width: 60px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 5px 2px;
-    border-radius: 50%;
+    padding-bottom: 130px;
+    margin-bottom: -220px;
 }
