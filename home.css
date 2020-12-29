@@ -1,7 +1,4 @@
 body {
-    background-image: url('image/learn.svg');
-    background-repeat: no-repeat;
-    background-position: center;
     background-color: rgb(255, 255, 255);
 }
 
@@ -10,7 +7,7 @@ body {
 }
 
 .share {
-    margin-top: 650px;
+    margin-top: 500px;
 }
 
 .share-footer {
@@ -94,8 +91,7 @@ body {
 
 .profile-icon {
     width: 35px;
-    padding-top: 10px;
-    margin-right: 20px;
+    margin-top: -45px;
 }
 
 .p-icon {
@@ -103,7 +99,6 @@ body {
 }
 
 .dashboard {
-    position: fixed;
     padding-top: 10px;
     margin-left: 20px;
 }
