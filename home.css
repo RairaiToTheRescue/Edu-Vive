@@ -1,9 +1,6 @@
 body {
+    margin: 0;
     background-color: rgb(255, 255, 255);
-}
-
-.container {
-    margin-top: 10px;
 }
 
 .share {
@@ -102,3 +99,5 @@ body {
     padding-top: 10px;
     margin-left: 20px;
 }
+
+@media screen and (max-width: 992px) {}
