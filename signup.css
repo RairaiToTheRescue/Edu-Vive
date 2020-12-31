@@ -1,11 +1,5 @@
-@media screen,
-(max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
+body {
+    background-image: url('image/background.png');
 }
 
 #logreg-forms {
